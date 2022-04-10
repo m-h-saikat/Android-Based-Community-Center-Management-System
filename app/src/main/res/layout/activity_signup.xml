@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Blue"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    tools:context=".SignupActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/White">
+
+ <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ImageView
+        android:id="@+id/user_id"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/user_registration"/>
+
+    <TextView
+        android:id="@+id/nothing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_id"
+        android:text="User Registration Form"
+        android:textColor="@color/OrangeRed"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/signup_user_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nothing"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:text="Name :"
+        android:textSize="16sp"
+        android:textColor="@color/Black"
+        android:layout_alignLeft="@id/signup_user_email"
+        />
+
+    <EditText
+        android:id="@+id/signup_user_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signup_user_name_text"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@color/Blue"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/user_mobile_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signup_user_name"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:text="Mobile :"
+        android:textSize="16sp"
+        android:textColor="@color/Black"
+        android:layout_alignLeft="@id/signup_user_email"
+        />
+
+    <EditText
+        android:id="@+id/signup_user_mobile"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_mobile_text"
+        android:ems="10"
+        android:inputType="phone"
+        android:textColor="@color/Blue"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/user_email_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signup_user_mobile"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:text="Email :"
+        android:textSize="16sp"
+        android:textColor="@color/Black"
+        android:layout_alignLeft="@id/signup_user_email"
+        />
+
+    <EditText
+        android:id="@+id/signup_user_email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_email_text"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/Blue"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/user_password_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signup_user_email"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:text="Password :"
+        android:textSize="16sp"
+        android:textColor="@color/Black"
+        android:layout_alignLeft="@id/signup_user_email" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/user_password_layout"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/user_password_text"
+        android:layout_centerInParent="true"
+    app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/Black">
+
+    <EditText
+        android:id="@+id/signup_user_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@color/Blue"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/user_confirm_password_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_password_layout"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:text="Confirm Password :"
+        android:textSize="16sp"
+        android:textColor="@color/Black"
+        android:layout_alignLeft="@id/signup_user_email"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/user_confirm_password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_confirm_password_text"
+        android:gravity="center"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/Black">
+    <EditText
+        android:id="@+id/signup_user_confirm_password"
+        android:layout_width="300dp"
+        android:textColorHint="@color/White"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:textColor="@color/Blue" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_confirm_password_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:background="@drawable/button_shape" />
+    <ProgressBar
+        android:id="@+id/signup_user_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/register_button"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="50dp"
+        android:layout_below="@+id/register_button"
+        android:weightSum="3">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Already have an account?"
+        android:textSize="16sp"
+        android:layout_below="@+id/register_button"
+        android:gravity="center"
+        android:textColor="@color/Black"
+        android:textStyle="bold"
+        android:layout_weight="2"/>
+
+    <TextView
+        android:id="@+id/signin_text"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Sign in here"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textColor="@color/Blue"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:layout_below="@+id/register_button"
+        android:focusableInTouchMode="true" />
+    </LinearLayout>
+
+</RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    tools:context=".AdminEditPackagesActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:background="@color/Blue">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/package_card1_admin"
+                    android:layout_width="300dp"
+                    android:layout_height="350dp"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="20dp"
+                    android:foreground="?android:attr/selectableItemBackground">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Package 1"
+                            android:textColor="@color/Blue"
+                            android:textSize="20sp"
+                            android:layout_marginBottom="5dp"/>
+                        <ImageView
+                            android:id="@+id/package1_photo_admin"
+                            android:layout_width="200dp"
+                            android:layout_height="150dp"
+                            android:padding="10dp"
+                            android:src="@drawable/package1_photo" />
+
+                        <Button
+                            android:id="@+id/btn_pk1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="select photo"
+                            android:textSize="12sp"
+                            android:textAllCaps="false"
+                            android:textColor="@color/White"
+                            android:background="@color/Green"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/package1"
+                            android:textColor="@color/Black"
+                            android:textSize="12sp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Price (per person): "
+                                android:textColor="@color/Black"
+                                android:textSize="12sp"/>
+                            <EditText
+                                android:id="@+id/pk1_price_admin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/Black"
+                                android:textStyle="bold"
+                                android:textSize="12sp"
+                                android:focusableInTouchMode="true"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="/="
+                                android:textColor="@color/Black"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp">
+
+                            <Button
+                                android:id="@+id/btn_pk1_update"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/button_shape"
+                                android:text="Update" />
+
+                            <ProgressBar
+                                android:id="@+id/pk1_pro"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:visibility="gone"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/package_card2_admin"
+                    android:layout_width="300dp"
+                    android:layout_height="350dp"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="20dp"
+                    android:foreground="?android:attr/selectableItemBackground">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Package 2"
+                            android:textColor="@color/Blue"
+                            android:textSize="20sp"
+                            android:layout_marginBottom="1dp"/>
+                        <ImageView
+                            android:id="@+id/package2_photo_admin"
+                            android:layout_width="150dp"
+                            android:layout_height="100dp"
+                            android:padding="10dp"
+                            android:src="@drawable/morog_polao" />
+
+                        <Button
+                            android:id="@+id/btn_pk2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="select photo"
+                            android:textSize="12sp"
+                            android:textAllCaps="false"
+                            android:textColor="@color/White"
+                            android:background="@color/Green"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/package2"
+                            android:textColor="@color/Black"
+                            android:textSize="12sp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Price (per person): "
+                                android:textColor="@color/Black"
+                                android:textSize="12sp"/>
+                            <EditText
+                                android:id="@+id/pk2_price_admin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/Black"
+                                android:textStyle="bold"
+                                android:textSize="12sp"
+                                android:focusableInTouchMode="true"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="/="
+                                android:textColor="@color/Black"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp">
+                        <Button
+                            android:id="@+id/btn_pk2_update"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="Update"
+                            android:background="@drawable/button_shape"/>
+                            <ProgressBar
+                                android:id="@+id/pk2_pro"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:visibility="gone"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/package_card3_admin"
+                    android:layout_width="300dp"
+                    android:layout_height="350dp"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="20dp"
+                    android:foreground="?android:attr/selectableItemBackground">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Package 3"
+                            android:textColor="@color/Blue"
+                            android:textSize="20sp"
+                            android:layout_marginBottom="1dp"/>
+                        <ImageView
+                            android:id="@+id/package3_photo_admin"
+                            android:layout_width="150dp"
+                            android:layout_height="120dp"
+                            android:padding="10dp"
+                            android:src="@drawable/kacchi" />
+
+                        <Button
+                            android:id="@+id/btn_pk3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="select photo"
+                            android:textSize="12sp"
+                            android:textAllCaps="false"
+                            android:textColor="@color/White"
+                            android:background="@color/Green"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/package3"
+                            android:textColor="@color/Black"
+                            android:textSize="12sp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Price (per person): "
+                                android:textColor="@color/Black"
+                                android:textSize="12sp"/>
+                            <EditText
+                                android:id="@+id/pk3_price_admin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/Black"
+                                android:textStyle="bold"
+                                android:textSize="12sp"
+                                android:focusableInTouchMode="true"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="/="
+                                android:textColor="@color/Black"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center">
+                        <Button
+                            android:id="@+id/btn_pk3_update"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="Update"
+                            android:background="@drawable/button_shape"/>
+                            <ProgressBar
+                                android:id="@+id/pk3_pro"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:visibility="gone"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/package_card4_admin"
+                    android:layout_width="300dp"
+                    android:layout_height="350dp"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="20dp"
+                    android:foreground="?android:attr/selectableItemBackground">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Package 4"
+                            android:textColor="@color/Blue"
+                            android:textSize="20sp"
+                            android:layout_marginBottom="1dp"/>
+                        <ImageView
+                            android:id="@+id/package4_photo_admin"
+                            android:layout_width="150dp"
+                            android:layout_height="120dp"
+                            android:padding="10dp"
+                            android:src="@drawable/plain_polao" />
+
+                        <Button
+                            android:id="@+id/btn_pk4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="select photo"
+                            android:textSize="12sp"
+                            android:textAllCaps="false"
+                            android:textColor="@color/White"
+                            android:background="@color/Green"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/package2"
+                            android:textColor="@color/Black"
+                            android:textSize="12sp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Price (per person): "
+                                android:textColor="@color/Black"
+                                android:textSize="12sp"/>
+                            <EditText
+                                android:id="@+id/pk4_price_admin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/Black"
+                                android:textStyle="bold"
+                                android:textSize="12sp"
+                                android:focusableInTouchMode="true"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="/="
+                                android:textColor="@color/Black"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp">
+                        <Button
+                            android:id="@+id/btn_pk4_update"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="Update"
+                            android:background="@drawable/button_shape"/>
+                            <ProgressBar
+                                android:id="@+id/pk4_pro"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:visibility="gone"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<resources>
+<string name="app_name">ccms</string>
+<string name="navigation_drawer_open">Open navigation drawer</string>
+<string name="navigation_drawer_close">Close navigation drawer</string>
+<string name="nav_header_title">CCMS</string>
+<string name="nav_header_subtitle">ccms@gmail.com</string>
+<string name="nav_header_desc">Navigation header</string>
+<string name="action_settings">Settings</string>
+
+<string name="menu_home">Home</string>
+<string name="menu_gallery">Gallery</string>
+<string name="menu_video">Video</string>
+<string name="menu_setting">Setting</string>
+<string name="menu_share">Share</string>
+<string name="menu_send">Send</string>
+<string name="faq">Frequently Asked Questions</string>
+
+<string name="about">
+        Mohammed Mahmudul Hasan
+        \nMehedi Hasan Saikat
+        \nDepartment of CSE,DIU
+
+    </string>
+
+<string name="booking_info">
+        Booking\n
+        \t Info.
+    </string>
+
+<string name="contact_us">
+        \nAddress: Dhanmondi, Dhaka
+        \nPhone: +8801*********
+        \nEmail: xyz@gmail.com
+    </string>
+<string name="package1">
+        Item 1: পোলাও Item 2: রোস্ট
+        \nItem 3: গরুর মাংস Item 4: ডাল
+    </string>
+<string name="package2">
+        Item 1:মোরগ পোলাও Item 2:কাবাব
+        \nItem 3: বিফ রেজেলা Item 4: সালাদ,
+        \nফিরনি/জর্দা,বোরহানি/কোমোলপানীয়।
+    </string>
+
+<string name="package3">
+        Item 1:স্পেশাল কাচ্চি Item 2:কাবাব
+        \nItem 3: চিকেন রোস্ট Item 4: সালাদ,
+        \nফিরনি/জর্দা,বোরহানি/কোমোলপানীয়।
+    </string>
+
+<string name="package4">
+        Item 1: পোলাও Item 2:চিকেন রোস্ট
+        \nItem 3:কাবাব Item 4:বিফ রেজেলা
+        \nItem 5: সালাদ,ফিরনি/জর্দা,বোরহানি/কোমোলপানীয়।
+    </string>
+
+<string name="booking_process">
+        1. You can book our community center online
+      \n2. You can also book contacting with manager
+    </string>
+<string name="online_booking">
+        -> At first you need to sign up or register
+        \n-> After log in, go to booking page
+        \n-> Filling up the booking form
+        \n-> Choose available date
+        \n-> Book a date
+    </string>
+
+<string name="after_online_booking">
+        -> You will have to make payment within 48 hours. Otherwise, your booking may be cancelled by admin.
+        \n\n-> For payment, please contact with our provided contact number.
+        \n\n-> You can check your booking status from upcoming booking history.
+        \n\n-> You can cancel your booking request until booking status is Not Confirmed.
+        \n\n-> After successful payment, your payment status will be Paid and booking status will be Confirmed.
+        \n\n-> After payment, you will not be able to cancel your booking online. In that case, you will need to contact with admin.
+</string>
+</resources>

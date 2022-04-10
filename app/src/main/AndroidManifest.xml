@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ccms">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:icon="@drawable/ccms_app_logo_updated"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".BookingInfoActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".Rating.RatingActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AboutActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AdminBookingRequest.AdminConfirmedActivity"
+            android:parentActivityName=".AdminHomePageActivity" />
+        <activity
+            android:name=".AdminBookingRequest.AdminPendingRequestActivity"
+            android:parentActivityName=".AdminHomePageActivity" />
+        <activity
+            android:name=".UserBooking.BookingHistoryActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AdminRentalActivity"
+            android:parentActivityName=".AdminHomePageActivity" />
+        <activity
+            android:name=".AdminBooking.AdminDeleteHistoryActivity"
+            android:parentActivityName=".AdminBooking.AdminCheckBookingActivity" />
+        <activity
+            android:name=".AdminBooking.AdminConfirmCancelBookingActivity"
+            android:parentActivityName=".AdminBooking.AdminCheckBookingActivity" />
+        <activity
+            android:name=".FAQ.AdminFaqActivity"
+            android:parentActivityName=".AdminHomePageActivity" />
+        <activity
+            android:name=".UserBooking.BookingActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AdminBooking.AdminCheckBookingActivity"
+            android:parentActivityName=".AdminHomePageActivity" />
+        <activity
+            android:name=".Gallery.AdminDeletePhotoActivity"
+            android:parentActivityName=".Gallery.AdminDeletePhotoActivity" />
+        <activity
+            android:name=".Gallery.GalleryActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Gallery.AdminUploadPhotoActivity"
+            android:parentActivityName=".AdminHomePageActivity" />
+        <activity
+            android:name=".AdminEditPackagesActivity"
+            android:parentActivityName=".AdminHomePageActivity" />
+        <activity
+            android:name=".FoodPackagesActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Message.AdminReplyActivity"
+            android:parentActivityName=".AdminHomePageActivity" />
+        <activity
+            android:name=".Message.MessageActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FAQ.LastActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".AdminHomePageActivity" />
+        <activity
+            android:name=".AdminLoginActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".UpdateProfileActivity" />
+        <activity
+            android:name=".ContactUsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SignupActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".login"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

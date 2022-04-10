@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/DodgerBlue">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="20dp"
+                android:src="@drawable/expand_logo"
+                android:layout_gravity="center"
+                android:tint="@color/White"/>
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Booking Id"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/White"/>
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TableRow android:layout_marginTop="1dp">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:text="Booked Date:"
+                    android:layout_gravity="end"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/booked_date"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Your Booked Date"
+                    android:textColor="@color/Black"
+                    android:textSize="16sp" />
+            </TableRow>
+            <TableRow android:layout_marginTop="3dp">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="Request date:"
+                    android:textStyle="bold"
+                    android:textColor="@color/Black"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/request_day"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Request Date"
+                    android:textColor="@color/Black"
+                    android:textSize="16sp" />
+            </TableRow>
+            <TableRow android:layout_marginTop="3dp">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textStyle="bold"
+                    android:text="Booking Status:"
+                    android:textColor="@color/Black"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Your booking status"
+                    android:textColor="@color/Black"
+                    android:textSize="16sp" />
+            </TableRow>
+            <TableRow android:layout_marginTop="3dp">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:text="Email:"
+                    android:layout_gravity="end"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Your Booked Date"
+                    android:textColor="@color/Black"
+                    android:textSize="16sp" />
+            </TableRow>
+        </TableLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

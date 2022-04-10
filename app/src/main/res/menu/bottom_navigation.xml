@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_upcoming"
+        android:icon="@drawable/forward_icon"
+        android:title="Upcoming" />
+
+    <item
+        android:id="@+id/nav_current"
+        android:icon="@drawable/current_icon"
+        android:title="Current Booking" />
+
+    <item
+        android:id="@+id/nav_previous"
+        android:icon="@drawable/history_icon"
+        android:title="Previous History" />
+
+</menu>

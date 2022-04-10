@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@color/DodgerBlue">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Booking Information "
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/White"/>
+
+            <ImageView
+                android:id="@+id/icon_cancel"
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/cancel_icon"
+                android:tint="@color/White"/>
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1dp">
+
+            <TableRow android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textStyle="bold"
+                    android:text="Booking Id:"
+                    android:textColor="@color/Black"
+                    android:textSize="13sp" />
+                <TextView
+                    android:id="@+id/booking_id"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Your booking Id"
+                    android:textColor="@color/Black"
+                    android:textSize="13sp" />
+            </TableRow>
+            <TableRow android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="Shift:"
+                    android:textStyle="bold"
+                    android:textColor="@color/Black"
+                    android:textSize="13sp" />
+                <TextView
+                    android:id="@+id/shift"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Your selected shift"
+                    android:textColor="@color/Black"
+                    android:textSize="13sp" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:text="Booked Date:"
+                    android:layout_gravity="end"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold"
+                    android:textSize="13sp" />
+                <TextView
+                    android:id="@+id/bookedDate"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Your Booked Date"
+                    android:textColor="@color/Black"
+                    android:textSize="13sp" />
+            </TableRow>
+            <TableRow android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textStyle="bold"
+                    android:text="Booking Request Date:"
+                    android:textColor="@color/Black"
+                    android:textSize="13sp" />
+                <TextView
+                    android:id="@+id/requestDate"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Your booking status"
+                    android:textColor="@color/Black"
+                    android:textSize="13sp" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textStyle="bold"
+                    android:text="Event Type:"
+                    android:textColor="@color/Black"
+                    android:textSize="13sp" />
+                <TextView
+                    android:id="@+id/eventType"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Your event type"
+                    android:textColor="@color/Black"
+                    android:textSize="13sp" />
+            </TableRow>
+            <TableRow android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textStyle="bold"
+                    android:text="Total guests:"
+                    android:textColor="@color/Black"
+                    android:textSize="13sp" />
+                <TextView
+                    android:id="@+id/guests"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Your guests Number"
+                    android:textColor="@color/Black"
+                    android:textSize="13sp" />
+            </TableRow>
+            <TableRow android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textStyle="bold"
+                    android:text="Rental Cost:"
+                    android:textColor="@color/Black"
+                    android:textSize="13sp" />
+                <TextView
+                    android:id="@+id/cost"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Your rental cost"
+                    android:textColor="@color/Black"
+                    android:textSize="13sp" />
+            </TableRow>
+            <TableRow android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textStyle="bold"
+                    android:text="Payment Status:"
+                    android:textColor="@color/Black"
+                    android:textSize="13sp" />
+                <TextView
+                    android:id="@+id/paymentStatus"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Your payment status"
+                    android:textColor="@color/Black"
+                    android:textSize="13sp" />
+            </TableRow>
+            <TableRow android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textStyle="bold"
+                    android:text="Booking Status:"
+                    android:textColor="@color/Black"
+                    android:textSize="13sp" />
+                <TextView
+                    android:id="@+id/bookingStatus"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Your booking status"
+                    android:textColor="@color/Black"
+                    android:textSize="13sp" />
+            </TableRow>
+        </TableLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/DodgerBlue"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="10dp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1dp">
+
+            <TableRow android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textStyle="bold"
+                    android:text="Email:"
+                    android:textColor="@color/Black"
+                    android:textSize="13sp" />
+                <TextView
+                    android:id="@+id/Email"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Your Email Address"
+                    android:textColor="@color/Black"
+                    android:textSize="13sp" />
+            </TableRow>
+            <TableRow android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textStyle="bold"
+                    android:text="Name:"
+                    android:textColor="@color/Black"
+                    android:textSize="13sp" />
+                <TextView
+                    android:id="@+id/Name"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Your Name"
+                    android:textColor="@color/Black"
+                    android:textSize="13sp" />
+            </TableRow>
+            <TableRow android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textStyle="bold"
+                    android:text="Mobile Number:"
+                    android:textColor="@color/Black"
+                    android:textSize="13sp" />
+                <TextView
+                    android:id="@+id/Mobile"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Your mobile No"
+                    android:textColor="@color/Black"
+                    android:textSize="13sp" />
+            </TableRow>
+            <TableRow android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textStyle="bold"
+                    android:text="Additional Mobile:"
+                    android:textColor="@color/Black"
+                    android:textSize="13sp" />
+                <TextView
+                    android:id="@+id/AddMobile"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Your additional mobile No"
+                    android:textColor="@color/Black"
+                    android:textSize="13sp" />
+            </TableRow>
+        </TableLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="                Address:"
+                android:textColor="@color/Black"
+                android:textSize="13sp"/>
+            <TextView
+                android:id="@+id/Address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Your address"
+                android:textColor="@color/Black"
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+        <Button
+            android:id="@+id/cancel_request_button"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:text="Cancel the booking request"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:background="@color/colorAccent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+      <Button
+          android:id="@+id/close_button"
+          android:layout_width="wrap_content"
+          android:layout_height="35dp"
+          android:text="Close"
+          android:textColor="@color/White"
+          android:background="@color/DodgerBlue"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

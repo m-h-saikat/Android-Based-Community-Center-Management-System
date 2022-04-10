@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Blue"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:touchscreenBlocksFocus="true"
+    tools:context=".login">
+
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_marginRight="20dp"
+     android:layout_marginLeft="20dp"
+     android:layout_marginTop="1dp"
+     android:layout_marginBottom="60dp"
+     android:background="@color/White">
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+         <ImageView
+             android:id="@+id/user_id"
+             android:layout_width="100dp"
+             android:layout_height="90dp"
+             android:layout_alignParentTop="true"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="10dp"
+             android:src="@drawable/login2"
+             android:contentDescription="TODO" />
+
+         <com.google.android.material.textfield.TextInputLayout
+             android:id="@+id/user_email_layout"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/user_id"
+             android:gravity="center">
+
+             <EditText
+                 android:id="@+id/user_email"
+                 android:layout_width="300dp"
+                 android:hint="Email"
+                 android:layout_height="wrap_content"
+                 android:ems="10"
+                 android:layout_marginTop="52dp"
+                 android:inputType="textEmailAddress"
+                 android:textColor="@color/Blue" />
+
+         </com.google.android.material.textfield.TextInputLayout>
+
+         <com.google.android.material.textfield.TextInputLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/user_password_layout"
+             android:layout_below="@id/user_email_layout"
+             android:gravity="center"
+             app:passwordToggleEnabled="true"
+             app:passwordToggleTint="@color/Black">
+
+             <EditText
+                 android:id="@+id/user_password"
+                 android:layout_width="300dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="26dp"
+                 android:ems="10"
+                 android:hint="Password"
+                 android:textColor="@color/Blue"
+                 android:inputType="textPassword"/>
+
+         </com.google.android.material.textfield.TextInputLayout>
+
+         <Button
+             android:id="@+id/user_login_button"
+             android:layout_width="200dp"
+             android:layout_height="wrap_content"
+             android:textColor="@color/Black"
+             android:layout_below="@id/user_password_layout"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="30dp"
+             android:text="Login"
+             android:textAllCaps="false"
+             android:background="@drawable/button_shape"
+             android:focusableInTouchMode="true"/>
+
+         <ProgressBar
+             android:id="@+id/login_progressBar"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_above="@+id/user_login_button"
+             android:layout_centerHorizontal="true"
+             android:visibility="gone" />
+
+         <LinearLayout
+             android:id="@+id/forgot"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_marginTop="20dp"
+             android:layout_marginBottom="10dp"
+             android:layout_below="@+id/user_login_button"
+             android:weightSum="2">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAllCaps="false"
+                 android:text="Forgot Password?"
+                 android:textSize="16sp"
+                 android:gravity="center"
+                 android:textColor="@color/Black"
+                 android:textStyle="bold"
+                 android:layout_weight="1"/>
+
+             <TextView
+                 android:id="@+id/forgot_pass"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Click here"
+                 android:textAllCaps="true"
+                 android:textSize="16sp"
+                 android:textColor="@color/Blue"
+                 android:textStyle="bold"
+                 android:focusableInTouchMode="true"/>
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_marginTop="5dp"
+             android:layout_marginBottom="50dp"
+             android:layout_below="@+id/forgot"
+             android:weightSum="3">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAllCaps="false"
+                 android:text="Don't have an account?"
+                 android:textSize="16sp"
+                 android:gravity="center"
+                 android:textColor="@color/Black"
+                 android:textStyle="bold"
+                 android:layout_weight="2"/>
+
+             <TextView
+                 android:id="@+id/register_text"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAllCaps="false"
+                 android:text="Register here"
+                 android:textSize="16sp"
+                 android:textColor="@color/Blue"
+                 android:textStyle="bold"
+                 android:focusableInTouchMode="true"/>
+         </LinearLayout>
+
+
+     </RelativeLayout>
+</ScrollView>
+
+</LinearLayout>

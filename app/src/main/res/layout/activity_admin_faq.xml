@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:touchscreenBlocksFocus="true"
+    tools:context=".FAQ.AdminFaqActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical"
+     android:layout_marginBottom="30dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add an FAQ"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/DarkBlue"
+                android:layout_marginBottom="15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Set a document Id: "
+                  android:textColor="@color/Black"
+                  android:textSize="15sp"/>
+                <EditText
+                    android:id="@+id/doc_id_add"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/edit_text_another"
+                    android:textSize="15sp"
+                    android:inputType="number"
+                    android:textColor="@color/Black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Question: "
+                    android:textColor="@color/Black"
+                    android:textSize="15sp"/>
+                <EditText
+                    android:id="@+id/add_faq_Q"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:inputType="textImeMultiLine"
+                    android:background="@drawable/edit_text_another"
+                    android:textSize="15sp"
+                    android:textColor="@color/Black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Answer: "
+                    android:textColor="@color/Black"
+                    android:textSize="15sp"/>
+                <EditText
+                    android:id="@+id/add_faq_ans"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/edit_text_another"
+                    android:textSize="15sp"
+                    android:textColor="@color/Black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/btn_faq_add"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Add"
+                android:layout_gravity="center"
+                android:background="@drawable/button_shape"/>
+
+                <ProgressBar
+                    android:id="@+id/add_faq_progressbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+        </LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="@color/Green"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update an FAQ"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/DarkBlue"
+                android:layout_marginBottom="15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set a document Id: "
+                    android:textColor="@color/Black"
+                    android:textSize="15sp"
+                    android:layout_weight="2" />
+                <EditText
+                    android:id="@+id/doc_id_update"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:inputType="number"
+                    android:background="@drawable/edit_text_another"
+                    android:textSize="15sp"
+                    android:textColor="@color/Black"
+                    android:layout_weight="2"
+                    android:layout_marginRight="15dp"/>
+                <Button
+                    android:id="@+id/btn_faq_get"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Get"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Question: "
+                    android:textColor="@color/Black"
+                    android:textSize="15sp"/>
+                <EditText
+                    android:id="@+id/update_faq_Q"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/edit_text_another"
+                    android:textSize="15sp"
+                    android:textColor="@color/Black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Answer: "
+                    android:textColor="@color/Black"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/update_faq_ans"
+                    android:layout_width="match_parent"
+                    android:layout_height="104dp"
+                    android:background="@drawable/edit_text_another"
+                    android:textColor="@color/Black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:id="@+id/btn_faq_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Update"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_shape"/>
+
+                <ProgressBar
+                    android:id="@+id/update_faq_progressbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+        </LinearLayout>
+     <View
+         android:layout_width="match_parent"
+         android:layout_height="2dp"
+         android:background="@color/Green"/>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_marginTop="10dp">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Delete an FAQ"
+             android:layout_gravity="center"
+             android:textSize="20sp"
+             android:textStyle="bold"
+             android:textColor="@color/DarkBlue"
+             android:layout_marginBottom="15dp"/>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Set a document Id: "
+                 android:textColor="@color/Black"
+                 android:textSize="15sp"/>
+             <EditText
+                 android:id="@+id/doc_id_delete"
+                 android:layout_width="100dp"
+                 android:layout_height="30dp"
+                 android:background="@drawable/edit_text_another"
+                 android:textSize="15sp"
+                 android:inputType="number"
+                 android:textColor="@color/Black"/>
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:layout_marginBottom="10dp"
+             android:layout_marginTop="5dp">
+
+             <Button
+                 android:id="@+id/btn_faq_delete"
+                 android:layout_width="wrap_content"
+                 android:layout_height="40dp"
+                 android:text="Delete"
+                 android:layout_gravity="center"
+                 android:background="@drawable/button_shape"/>
+
+             <ProgressBar
+                 android:id="@+id/delete_faq_progressbar"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:visibility="gone"/>
+         </LinearLayout>
+
+
+     </LinearLayout>
+
+
+
+ </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
